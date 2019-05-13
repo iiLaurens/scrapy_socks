@@ -1,0 +1,15 @@
+/txsocksx/_version.py
+/version.txt
+
+/.coverage
+/htmlcov
+/_trial_temp
+
+/build
+/dist
+/wheelhouse
+/MANIFEST
+*.egg
+*.egg-info
+
+/venv
