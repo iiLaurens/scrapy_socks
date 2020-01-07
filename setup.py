@@ -11,29 +11,9 @@ with open('requirements.txt', 'rb') as infile:
     install_requires = infile.read().split()
 
 setup(
-    name='txsocksx',
-    description='Twisted client endpoints for SOCKS{4,4a,5}',
-    long_description=long_description,
-    author='Constantin Slednev',
-    author_email='c.slednev@gmail.com',
-    url='https://github.com/habnabit/txsocksx',
-    classifiers=[
-        'Development Status :: 3 - Alpha',
-        'Framework :: Twisted',
-        'Intended Audience :: Developers',
-        'License :: OSI Approved :: ISC License (ISCL)',
-        'Operating System :: OS Independent',
-        'Programming Language :: Python :: 2.6',
-        'Programming Language :: Python :: 2.7',
-        'Programming Language :: Python :: 2 :: Only',
-        'Topic :: Internet',
-    ],
+    name='scrapy_socks',
+    description='Scrapy socks proxy support',
     license='Apache 2.0',
-
-    setup_requires=['vcversioner>=1'],
-    vcversioner={
-        'version_module_paths': ['txsocksx/_version.py'],
-    },
     install_requires=install_requires,
-    packages=['txsocksx', 'txsocksx.test'],
+    packages=['scrapy_socks'],
 )
