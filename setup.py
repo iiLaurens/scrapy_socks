@@ -3,12 +3,8 @@
 
 from setuptools import setup
 
-
-with open('README.rst', 'rb') as infile:
-    long_description = infile.read()
-
-with open('requirements.txt', 'rb') as infile:
-    install_requires = infile.read().split()
+with open('requirements.txt', 'r') as infile:
+    install_requires = infile.readlines()
 
 setup(
     name='scrapy_socks',
